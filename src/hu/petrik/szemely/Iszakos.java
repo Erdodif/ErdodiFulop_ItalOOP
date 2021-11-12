@@ -1,6 +1,7 @@
 package hu.petrik.szemely;
 
 import hu.petrik.receptek.Alkoholos;
+import hu.petrik.receptek.Gyumolcs;
 
 import java.util.Random;
 
@@ -19,10 +20,12 @@ public class Iszakos {
         this.turesHatar = Math.random() * 0.3 + 0.16;
     }
 
-    public void Elfogyaszt(Alkoholos a, double menyiseg) throws BACOverflowException {
-        this.alkoholSzint += a.mennyiAlkoholtTartalmaz() * menyiseg / 2;
-        if (this.alkoholSzint > 0.3) {
-            throw new BACOverflowException(this.alkoholSzint);
+    public void Elfogyaszt(Object barmi, double menyiseg) throws BACOverflowException {
+        if (barmi instanceof Alkoholos) {
+            this.alkoholSzint += ((Alkoholos) barmi).mennyiAlkoholtTartalmaz() * menyiseg / 2;
+            if (this.alkoholSzint > 0.3) {
+                throw new BACOverflowException(this.alkoholSzint);
+            }
         }
     }
 
