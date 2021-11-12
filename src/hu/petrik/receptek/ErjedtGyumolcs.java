@@ -1,7 +1,7 @@
-package receptek;
+package hu.petrik.receptek;
 
-public class ErjedtGyumolcs extends Gyumolcs{
-    private double alkoholTartalom;
+public class ErjedtGyumolcs extends Gyumolcs implements Alkoholos{
+    protected double alkoholTartalom;
 
     public ErjedtGyumolcs(String f, String i, double a) {
         super(f, i);

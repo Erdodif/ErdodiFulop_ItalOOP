@@ -1,8 +1,8 @@
-package receptek;
+package hu.petrik.receptek;
 
 public class Gyumolcs {
-    private String fajta;
-    private String iz;
+    protected String fajta;
+    protected String iz;
 
 
     public Gyumolcs(String fajta, String iz) {

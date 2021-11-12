@@ -1,8 +1,8 @@
-package receptek;
+package hu.petrik.receptek;
 
 public abstract class AlkoholosItal implements Ital, Alkoholos{
-    private final String iz;
-    private final double alkoholTartalom;
+    protected String iz;
+    protected double alkoholTartalom;
 
     public AlkoholosItal(String i, double a){
         this.iz = i;

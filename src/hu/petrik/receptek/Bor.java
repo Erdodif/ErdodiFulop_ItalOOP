@@ -1,8 +1,8 @@
-package receptek;
+package hu.petrik.receptek;
 
 public class Bor extends AlkoholosItal{
-    private String szolloFajta;
-    private String termoTerulet;
+    protected String szolloFajta;
+    protected String termoTerulet;
 
     public Bor(String sz, String t, String i, double a){
         super(i,a);

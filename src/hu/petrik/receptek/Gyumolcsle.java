@@ -1,4 +1,4 @@
-package receptek;
+package hu.petrik.receptek;
 
 public final class Gyumolcsle extends Gyumolcs implements Ital{
 

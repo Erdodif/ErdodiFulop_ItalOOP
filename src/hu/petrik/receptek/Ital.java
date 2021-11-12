@@ -1,4 +1,4 @@
-package receptek;
+package hu.petrik.receptek;
 
 public interface Ital {
     String mibolKeszult();

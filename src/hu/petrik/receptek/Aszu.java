@@ -1,7 +1,7 @@
-package receptek;
+package hu.petrik.receptek;
 
 public class Aszu extends Bor{
-    private int puttonySzam;
+    protected int puttonySzam;
 
     public Aszu(int p,String t, double a) {
         super("aszu", t, null, a);
